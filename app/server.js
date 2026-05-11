@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    res.status(200).send("App is Running without any issues with roll back");
+    res.status(500).send("App is not runnint");
 });
 
 app.listen(3000, () => {
