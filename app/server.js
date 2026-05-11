@@ -7,9 +7,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    res.status(200).send("OK");
+    res.status(200).send("App is Running without any issues");
 });
 
 app.listen(3000, () => {
-    console.log("Server running on port 3000");
+    console.log("Server running on port 3000 wich is mapped to 80");
 });
