@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    res.status(500).send("App is not runnint");
+    res.status(200).send("App is Runnint Successfully");
 });
 
 app.listen(3000, () => {
