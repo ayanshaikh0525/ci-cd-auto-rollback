@@ -68,6 +68,8 @@ jobs:
               --name app \
               ${{ secrets.DOCKER_USERNAME }}/devops-demo:previous
 
+            echo "Rollback has done to previous stable version."
+            
             exit 1
           fi
 
