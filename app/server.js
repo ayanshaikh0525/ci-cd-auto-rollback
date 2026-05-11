@@ -3,11 +3,11 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("App is running was running successfully rollback has done!");
+    res.send("App is running successfully!");
 });
 
 app.get("/health", (req, res) => {
-    res.status(200).send("App is Running without any issues");
+    res.status(500).send("App is Running without any issues");
 });
 
 app.listen(3000, () => {
